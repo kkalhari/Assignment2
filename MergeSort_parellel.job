@@ -1,0 +1,21 @@
+ -l walltime=00:03:00
+
+#PBS -N myjob
+
+#PBS -l nodes=2:gpu
+
+ 
+
+cd $PBS_O_WORKDIR
+
+cat $PBS_NODEFILE
+
+ 
+
+./MergeSortParallel_parellel.o
+
+ 
+
+# have a blank line
+
+
