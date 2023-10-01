@@ -1,0 +1,12 @@
+#PBS -l walltime=00:03:00
+#PBS -N myJobParallel
+#PBS -l nodes=2:gpu
+
+cd $PBS_O_WORKDIR
+cat $PBS_NODEFILE
+
+./FactorialCalculation.o
+
+# have a blank line
+
+~                    
